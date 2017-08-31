@@ -36,6 +36,13 @@ The EmailProvisioner allows configuration of a single recipient address and 6 di
 
 Please note that the UpdatePerson and UpdateGroup provisioning actions are activated for even the smallest status change in the relevant COPerson and COU. This will lead to a lot of e-mails to the service administrator that seemingly contain no change of information.
 
+Tests
+=====
+This plugin comes with unit tests for the mail CoEmailProvisionerTarget model. Access the Cake unit test page at:
+````
+<your path>/registry/test.php
+````
+You can select the CoEmailProvisioner plugin for testing there. Code coverage should be 100%.
 
 Disclaimer
 ==========
