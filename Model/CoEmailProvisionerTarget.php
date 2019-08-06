@@ -518,9 +518,9 @@ class CoEmailProvisionerTarget extends CoProvisionerPluginTarget {
     return $this->_emailer;
   }
 
-  public function saveAll($data)
+  public function saveAll($data = array(), $options = array())
   {
-    parent::saveAll($data);
+    parent::saveAll($data, $options);
     // the edit page does not implement a containable interface, which would allow us to save all
     // contained fields in one go. Instead we display 6 specific fields, wether they exist or not
     // in the database. We need to save those template fields now, even if empty.
